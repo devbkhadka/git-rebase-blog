@@ -1,0 +1,11 @@
+We'll use this file to change and practice different cases
+of rebase that we discussed in blog.
+
+
+This is initial version of file, here are some facts about Nepal
+- Nepal is the birth place of Lord Buddha.
+- World’s highest peak, Mount Everest (8848m) is located at Nepal.
+- Nepal has 8 of the world’s 10 tallest mountains.
+- Nepal has extraordinary landscape and consist highest lake,
+  highest peak, deepest lake, highest valley, deepest gorge and many more.
+- Nepal has the densest concentration of the world heritage sites.
