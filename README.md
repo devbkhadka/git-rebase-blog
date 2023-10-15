@@ -11,11 +11,11 @@
 
 #### When can we use rebase
 - When you have feature branch which may takes few days before you can create PR to merge. In this case you can rebase your branch against the main branch daily and get new codes and minimize conflicts.
-- rebasing and merging make history cleaner
+- Rebasing before merging your branch to main branch makes history cleaner
 - When working locally you can do micro commits and before creating PR you can rebase and reorganize your commits into atomic changes.
 - In some cases you may need to maintain temporary branch for testing features from multiple team members, lets say UAT branch. you can use interactive rebase to bring multiple changes from another branch to UAT branch.
 
-#### What are the risks of using rebase and how to minimize
+#### What are the risks of using rebase and how to minimize them
 The major risk of using rebase is it modifies the history and we need to do **force push** to upstream. So rule of thumb is **don't use rebase in a shared branch**. Some times there could be situation we want to use rebase when 2 people working on same feature. Lets say Backend and Frontend engineers working on same feature, In such case we can minimize the risk by using `--force-with-lease` when pushing to upstream. This prevents you from replacing other peoples work but for `--force-with-lease` to work as expected you need to keep few things in mind.
 
 **How `force-with-lease` works**
@@ -31,6 +31,11 @@ The major risk of using rebase is it modifies the history and we need to do **fo
 
 #### Common practices to use git rebase
 **Setup repo for practice**
+>> **Summary**
+>> *We'll clone the example repo and make two copies of the folder, one will be used as our local repo and other as upstream repo*
+>>
+>> *It is recommended that you open these two folders on separate window of your IDE to avoid confusion.*
+
 - `git clone https://github.com/devbkhadka/git-rebase-blog.git` to get the sample repo
 - make a copy of repo `cp -r git-rebase-blog git-rebase-blog-upstream`
 - Add `git-rebase-blog-upstream` as origin url for `git-rebase-blog`
